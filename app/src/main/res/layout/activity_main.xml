@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#1A174D"
+    tools:context="com.apror.mobile.vision.qrcodescanner.MainActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="395dp"
+        android:layout_height="675dp"
+        android:background="@mipmap/card">
+
+    </ImageView>
+    <TextView
+        android:textColor="#32325D"
+        android:text="QR Code Scanner"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo3"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="233dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@mipmap/btn1"
+        android:text="Scan Code" />
+
+    <TextView
+        android:id="@+id/scan_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:text="Scan Results:"
+        android:textSize="30dp"
+        android:textColor="#32325D"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:autoLink="phone"
+        android:textColor="#233DD2"
+        android:gravity="center"
+        android:id="@+id/scan_results"
+        android:layout_width="296dp"
+        android:layout_height="89dp"
+        android:layout_below="@+id/scan_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:shadowRadius="20"
+        android:background="@mipmap/fg" />
+
+
+
+</RelativeLayout>
